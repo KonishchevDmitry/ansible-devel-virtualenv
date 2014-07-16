@@ -1,0 +1,1 @@
+Ansible role that creates development python virtual environment using https://github.com/KonishchevDmitry/mkdevelvirtualenv
