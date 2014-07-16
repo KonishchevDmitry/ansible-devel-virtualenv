@@ -1,3 +1,4 @@
 python: python
 virtualenv: virtualenv
 project_path: /vagrant
+virtualenv_options:

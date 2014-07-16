@@ -2,4 +2,4 @@
   sudo: true
 
 - name: create development virtual environment
-  script: mkdevelvirtualenv/mkdevelvirtualenv -f -a "{{project_path}}" -p "{{python}}" -v "{{virtualenv}}"
+  script: mkdevelvirtualenv/mkdevelvirtualenv -f -a "{{project_path}}" -p "{{python}}" -v "{{virtualenv}}" {{virtualenv_options}}
