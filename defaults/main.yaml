@@ -1,4 +1,4 @@
 python: python
 virtualenv: virtualenv
 project_path: /vagrant
-virtualenv_options:
+system_site_packages: false
