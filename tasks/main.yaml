@@ -2,4 +2,6 @@
   become: true
 
 - name: create development virtual environment
-  script: mkdevelvirtualenv/mkdevelvirtualenv -f -a "{{project_path}}" -p "{{python}}" -v "{{virtualenv}}" {{"--system-site-packages" if system_site_packages else ""}}
+  script: mkdevelvirtualenv/mkdevelvirtualenv -f \
+    -a "{{project_path}}" {% for path in extra_project_paths %}{{" -A " + path}}{% endfor %} \
+    -p "{{python}}" -v "{{virtualenv}}" {{"--system-site-packages" if system_site_packages else ""}}
